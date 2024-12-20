@@ -1,0 +1,95 @@
+{
+    "data": [
+      {
+        "name": "Free Fire",
+        "region": "US",
+        "createdOn": 1676453714999,
+        "price": "$500 - $700",
+        "csv": "https://example.com/whatsapp-csv",
+        "report": "https://example.com/whatsapp-report",
+        "image_url": "https://ih1.redbubble.net/image.5196385310.0748/raf,360x360,075,t,fafafa:ca443f4786.jpg"
+      },
+      {
+        "name": "PUBG",
+        "region": "Canada, France",
+        "createdOn": 1734799900000,
+        "price": "$300 - $450",
+        "csv": "https://example.com/jewels-csv",
+        "report": "https://example.com/jewels-report",
+        "image_url": "https://4kwallpapers.com/images/wallpapers/pubg-playerunknowns-battlegrounds-2022-games-5k-1280x1280-7976.jpg"
+      },
+      {
+        "name": "Call of Duty 2",
+        "region": "France",
+        "createdOn": 1676451711124,
+        "price": "$200 - $350",
+        "csv": "https://example.com/mole-slayer-csv",
+        "report": "https://example.com/mole-slayer-report",
+        "image_url": "https://bleedingcool.com/wp-content/uploads/2024/05/Call-of-Duty-Black-Ops-6-Artwork-900x900.jpg"
+      },
+      {
+        "name": "Fortnite",
+        "region": "Japan",
+        "createdOn": 1734499900000,
+        "price": "$400 - $600",
+        "csv": "https://example.com/mancala-mix-csv",
+        "report": "https://example.com/mancala-mix-report",
+        "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6oYXfXLqmSSFKKOHQp2nbOBhTMW9IAUQvZg&s"
+      },
+      {
+        "name": "Counter Strike",
+        "region": "US, UK",
+        "createdOn": 1713720000000,
+        "price": "$550 - $800",
+        "csv": "https://example.com/winter-wonderland-csv",
+        "report": "https://example.com/winter-wonderland-report",
+        "image_url": "https://www.giantbomb.com/a/uploads/square_medium/15/155745/2255508-counter_strike_source.jpg"
+      },
+      {
+        "name": "Roblox",
+        "region": "India, Germany",
+        "createdOn": 1713915600000,
+        "price": "$250 - $400",
+        "csv": "https://example.com/spring-blossom-csv",
+        "report": "https://example.com/spring-blossom-report",
+        "image_url": "https://pics.craiyon.com/2023-06-22/516f9473eab74825b312c623fdeb9ac7.webp"
+      },
+        {
+          "name": "Minecraft",
+          "region": "Global",
+          "createdOn": 1736999900000,
+          "price": "$750 - $1200",
+          "csv": "https://example.com/new-year-special-csv",
+          "report": "https://example.com/new-year-special-report",
+          "image_url": "https://m.media-amazon.com/images/I/81AX8UH4FDL._AC_UF1000,1000_QL80_.jpg"
+        },
+        {
+          "name": "God of Wars",
+          "region": "USA",
+          "createdOn": 1705640400000,
+          "price": "$500 - $1000",
+          "csv": "https://example.com/christmas-csv",
+          "report": "https://example.com/christmas-report",
+          "image_url": "https://pbs.twimg.com/media/Fgptyz0X0AMb8xW.jpg"
+        },
+        {
+          "name": "Apex Legends",
+          "region": "Europe",
+          "createdOn": 1705726800000,
+          "price": "$600 - $900",
+          "csv": "https://example.com/winter-sale-csv",
+          "report": "https://example.com/winter-sale-report",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjqvfDXzILPtHw3uzShWtPtxukVZkplauoPg&s"
+        },
+        {
+          "name": "The Witcher wild 3",
+          "region": "India",
+          "createdOn": 1735499900000,
+          "price": "$800 - $1100",
+          "csv": "https://example.com/valentine-csv",
+          "report": "https://example.com/valentine-report",
+          "image_url": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png?w=440&thumb=false"
+        }     
+    ]
+  }
+  
