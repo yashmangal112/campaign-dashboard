@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Campaign Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based project to manage and display campaigns by dividing them into three categories: **Upcoming Campaigns**, **Live Campaigns**, and **Past Campaigns**. The application also supports language translation between English (`en`) and Spanish (`es`) using the `i18n` framework.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Campaign Categories**:
+  - **Upcoming Campaigns**: Campaigns with a `createdOn` date after today (future dates).
+  - **Live Campaigns**: Campaigns with a `createdOn` date equal to today's date.
+  - **Past Campaigns**: Campaigns with a `createdOn` date before today.
+- When a campaign's date is rescheduled, it should automatically move to the relevant tab. Ensure this functionality works consistently.
+- **Multilingual Support**:
+  - Language toggle between English (`en`) and Spanish (`es`).
+  - Translation files are located in the `src/i18n` folder.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Well-structured Code**:
+  - Clean, modular, and scalable architecture.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow these steps to set up the project locally.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yashmangal112/campaign-dashboard
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd campaign-dashboar
+3. **Install Dependencies**:
+   ```bash
+   npm install --legacy-peer-deps
+4. **Start the Development Server**:
+   ```bash
+   npm run start
+5. Access the Application: http://localhost:3000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
+### Folder Structure
+```
+src/
+├── components/           
+│   ├── CampaignTable.js  # Component for displaying campaigns in a table
+│   ├── LanguageSwitcher.js  # Language toggle button
+│   ├── PricingModal.js   # Modal for pricing details
+│   └── Tabs.js           # Tab component for campaign categories
+├── data/                 
+│   └── campaigns.json    # Sample campaign data
+├── i18n/                 # Localization files
+│   ├── locales/
+│   │   ├── en.json       # English translations
+│   │   └── es.json       # Spanish translations
+│   └── i18n.js           # i18n initialization
+├── App.js                # Main application file and compaigns logic details
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
+### Contact
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For any queries or feedback, feel free to contact:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Yash Mangal**  
+📧 yashmangal240@gmail.com  
+🔗 [GitHub Profile](https://github.com/yashmangal112)
