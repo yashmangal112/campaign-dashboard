@@ -43,17 +43,30 @@ function App() {
   };
 
   const filterCampaigns = (status) => {
-    const now = new Date().getTime();
+    const todayStart = new Date();
+    todayStart.setHours(0, 0, 0, 0); 
+    const tomorrowStart = new Date(todayStart);
+    tomorrowStart.setDate(todayStart.getDate() + 1); 
+  
     if (status === "Upcoming Campaigns") {
-      return campaigns.filter((c) => c.createdOn > now);
+      // Campaigns with a createdOn date greater than today's start
+      return campaigns.filter((c) => new Date(c.createdOn) >= tomorrowStart);
     } else if (status === "Live Campaigns") {
+      // Campaigns with a createdOn date within today's bounds
       return campaigns.filter(
-        (c) => c.createdOn <= now && now - c.createdOn <= 7 * 24 * 60 * 60 * 1000
+        (c) =>
+          new Date(c.createdOn) >= todayStart &&
+          new Date(c.createdOn) < tomorrowStart
       );
+    } else if (status === "Past Campaigns") {
+      // Campaigns with a createdOn date before today's start
+      return campaigns.filter((c) => new Date(c.createdOn) < todayStart);
     } else {
-      return campaigns.filter((c) => now - c.createdOn > 7 * 24 * 60 * 60 * 1000);
+      return [];
     }
   };
+  
+  
 
   const filteredCampaigns = filterCampaigns(currentTab);
 

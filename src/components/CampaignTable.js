@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next"; // Import useTranslation hook
+import { useTranslation } from "react-i18next";
 import { format } from "date-fns";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -30,27 +30,30 @@ const CampaignTable = ({ campaigns, onReschedule, onViewPricing }) => {
     {campaigns.map((campaign) => (
       <tr key={campaign.name} className="hover:bg-gray-100 min-w-full">
         <td className="px-4 py-2 align-middle text-sm sm:text-base">
-          {format(new Date(campaign.createdOn), "MMM dd, yyyy")}
-          <br />
-          <div className="font-light italic">
+        {format(new Date(campaign.createdOn), "MMM dd, yyyy")}
+        <br />
+        <div className="font-light italic">
             {(() => {
-              const createdDate = new Date(campaign.createdOn);
-              const today = new Date();
-              const differenceInTime = createdDate - today;
-              const differenceInDays = Math.ceil(
-                differenceInTime / (1000 * 60 * 60 * 24)
-              );
+            const createdDate = new Date(campaign.createdOn);
+            const today = new Date();
 
-              if (differenceInDays > 0) {
+            const todayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+            const createdStart = new Date(createdDate.getFullYear(), createdDate.getMonth(), createdDate.getDate());
+
+            const differenceInTime = createdStart - todayStart;
+            const differenceInDays = Math.ceil(differenceInTime / (1000 * 60 * 60 * 24)); 
+
+            if (differenceInDays > 0) {
                 return `${differenceInDays} ${t("days ahead")}`;
-              } else if (differenceInDays < 0) {
+            } else if (differenceInDays < 0) {
                 return `${Math.abs(differenceInDays)} ${t("days ago")}`;
-              } else {
+            } else {
                 return `${t("Today")}`;
-              }
+            }
             })()}
-          </div>
+        </div>
         </td>
+
 
         <td className="px-4 py-2 align-middle text-sm sm:text-base">
           <div className="flex items-center space-x-4">
