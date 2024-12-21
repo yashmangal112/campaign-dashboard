@@ -55,15 +55,6 @@
         "image_url": "https://pics.craiyon.com/2023-06-22/516f9473eab74825b312c623fdeb9ac7.webp"
       },
         {
-          "name": "Minecraft",
-          "region": "Global",
-          "createdOn": 1736999900000,
-          "price": "$750 - $1200",
-          "csv": "https://example.com/new-year-special-csv",
-          "report": "https://example.com/new-year-special-report",
-          "image_url": "https://m.media-amazon.com/images/I/81AX8UH4FDL._AC_UF1000,1000_QL80_.jpg"
-        },
-        {
           "name": "God of Wars",
           "region": "USA",
           "createdOn": 1705640400000,
