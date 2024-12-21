@@ -68,10 +68,10 @@ const CampaignTable = ({ campaigns, onReschedule, onViewPricing }) => {
 
         <td className="px-4 py-2 align-middle text-sm sm:text-base">
           <button
-            className="text-blue-500 flex lg:items-center items-start text-justify sm:flex-row flex-col justify-start space-x-2"
+            className="text-blue-500 flex lg:items-center items-start text-justify sm:flex-row flex-col justify-start sm:space-x-2"
             onClick={() => onViewPricing(campaign)}
           >
-            <RiMoneyDollarCircleLine className="lg:w-5 h-auto w-4"/>
+            <RiMoneyDollarCircleLine className="lg:w-5 h-auto w-4 space-x-2"/>
             <span>{t("View Pricing")}</span>
           </button>
         </td>
