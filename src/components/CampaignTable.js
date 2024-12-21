@@ -100,9 +100,9 @@ const CampaignTable = ({ campaigns, onReschedule, onViewPricing }) => {
               selected={new Date(campaign.createdOn)}
               onChange={(date) => handleReschedule(campaign, date)}
               customInput={
-                <button className="text-blue-500 flex text-justify items-center space-x-2">
+                <button className="text-blue-500 flex ml-[2px] sm:ml-0 items-center space-x-2">
                   <FaRegCalendarAlt />
-                  <span>{t("Schedule Again")}</span>
+                  <span className="text-justify">{t("Schedule Again")}</span>
                 </button>
               }
               className="sm:w-auto w-full"
